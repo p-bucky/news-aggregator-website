@@ -1,0 +1,179 @@
+.profile {
+  align-items: center;
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  background: #18191a;
+  padding-top: 50px;
+  padding-left: 60px;
+}
+
+.profile-card {
+  width: 85%;
+  min-width: 900px;
+  margin-top: 10px;
+  background: var(--card);
+  border: 2px solid #242526;
+  border-radius: 9px;
+  padding: 10px;
+}
+
+.profile-card-content {
+  display: flex;
+}
+
+.profile-card-img img {
+  height: 240px;
+  width: 230px;
+  border-radius: 50%;
+}
+
+.profile-card-body {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 20px;
+}
+
+.profile-name {
+  padding: 0px 5px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.profile-username {
+  padding: 0px 5px;
+}
+
+.profile-bio-head {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+.profile-bio {
+  padding: 0px 5px;
+}
+
+.card-writer div a {
+  margin-right: 5px;
+}
+
+.card-writer div a:hover {
+  color: red;
+}
+
+.card-ext-link a {
+  margin-right: 5px;
+}
+
+.card-ext-link a:hover {
+  color: white;
+}
+
+.profile-card-body a {
+  color: white;
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.profile-card-body a:hover {
+  color: gray;
+  border-bottom: 2px solid springgreen;
+}
+
+.update-profile-card-body {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 20px;
+}
+
+.update-profile-card-body button {
+  width: max-content;
+  padding: 3px;
+  border-radius: 2px;
+  margin-left: 8px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.update-profile-card-body button:hover {
+  background-color: darkolivegreen;
+  cursor: pointer;
+  color: rgb(17, 17, 17);
+}
+
+.profile-card-body p {
+  color: red;
+}
+
+@media only screen and (max-width: 970px) {
+  .profile-card-content {
+    display: block;
+  }
+  .profile-card {
+    min-width: 440px;
+    width: 64%;
+  }
+  .profile-card-img img {
+    height: 100px;
+    width: 100px;
+  }
+  .profile-card-body {
+    margin: 0px 0px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .profile {
+    padding-left: 0px;
+  }
+  .profile-card {
+    min-width: 320px;
+    width: 100%;
+  }
+
+  .profile-card-content {
+    display: block;
+  }
+
+  .profile-card-img img {
+    height: 100px;
+    width: 100px;
+  }
+  .profile-card-body {
+    margin: 0px 0px;
+  }
+  .profile-name {
+    font-size: 16px;
+  }
+
+  a {
+    font-size: 13px;
+  }
+
+  .profile-card-body a {
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
+
+  .profile-username {
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  .profile-bio-head {
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  .profile-bio {
+    font-size: 13px;
+    font-weight: 300;
+  }
+  .update-profile-card-body {
+    margin: 0px 0px;
+  }
+  .update-profile-card-body button {
+    margin-top: 5px;
+    margin-left: 0px;
+  }
+}
